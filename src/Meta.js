@@ -46,7 +46,7 @@ const Meta = (props) => {
 
 Meta.defaultProps = {
     title: 'React Example',
-    description: 'React.js 클론코딩02입니다.',
+    description: 'React.js 클론코딩02입니다.,',
     keywords: 'React',
     author: 'Yoo JiIn',
     subject: 'React.js Frontend Programming',
