@@ -19,6 +19,7 @@ const GlobalStyle = createGlobalStyle`
     body {
         margin: 0;
         padding: 0;
+        font-family:"Karma",serif
 
   }
 
@@ -32,14 +33,32 @@ const GlobalStyle = createGlobalStyle`
         font-weight: 500;
     }
 
+    h4 {
+        font-size: 20px;
+        margin: 10px 0;
+        font-weight: 500;
+    }
+
+    h6 {
+        font-size: 16px;
+        margin: 10px 0;
+        i {
+            font-style: italic;
+        }
+    }
+
     p {
         font-size: 17px;
         margin : 15px 0;
         line-height: 1.5;
-}
+    }
 
     hr {
         margin : 20px 0px;
+        padding: 10px 16px;
+        border: none;
+        width: 90%;
+        margin: auto;
         border-top : 0.3px solid #eee;
     }
 `;

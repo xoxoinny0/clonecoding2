@@ -33,7 +33,9 @@ const Meta = (props) => {
         {/* 구글 웹폰트 적용 */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Karma:wght@300;400;700&display=swap" rel="stylesheet" />
+        {/* 폰트어썸 */}
+        <script src="https://kit.fontawesome.com/6a207e0bff.js" crossorigin="anonymous"></script>
         </Helmet>
     </HelmetProvider>
   );
@@ -46,7 +48,7 @@ const Meta = (props) => {
 
 Meta.defaultProps = {
     title: 'React Example',
-    description: 'React.js 클론코딩02입니다.',
+    description: 'React.js 클론코딩03입니다.',
     keywords: 'React',
     author: 'Yoo JiIn',
     subject: 'React.js Frontend Programming',

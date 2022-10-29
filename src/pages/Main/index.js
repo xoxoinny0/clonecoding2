@@ -4,31 +4,29 @@
  */
 
 /** 패키지 참조 */
-import React from 'react';
+import React, { memo } from 'react';
 import styled from 'styled-components';
-import Jumbotron from './Jumbotron';
-import Project from './Project';
+import Food from './Food';
 import About from './About';
-import Contact from './Contact';
 
 // 메인페이지 영역에 대한 스타일 정의
 const MainContainer = styled.section`
-  width: 100%;
+  padding: 8px 16px;
 `;
 
 /**
  * 메인페이지 레이아웃 구성 함수
  * @returns {JSX.Element}
  */
-const Main = () => {
+const Main = memo(() => {
   return (
     <MainContainer>
-        <Jumbotron />
-        <Project />
+        <Food />
+        <hr />
         <About />
-        <Contact />
+        <hr />
     </MainContainer>
   );
-};
+});
 
 export default Main;

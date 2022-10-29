@@ -4,7 +4,7 @@
  */
 
 /** 패키지 참조 */
-import React from "react";
+import React, { memo } from "react";
 // 라우팅처리
 import {Routes, Route} from 'react-router-dom';
 // 모든 페이지 공용 컴포넌트
@@ -16,7 +16,7 @@ import Main from './pages/Main';
  * 기본 레이아웃 구성 함수
  * @returns {JSX.Element}
  */
-function App() {
+const App = memo(() => {
   return (
    <div>
     <Header />
@@ -26,6 +26,6 @@ function App() {
     <Footer />
    </div>
   );
-};
+});
 
 export default App;
